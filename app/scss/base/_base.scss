@@ -1,0 +1,29 @@
+@font-face {
+	font-family: 'Proxima Nova Rg';
+	src: url('../../font/ProximaNova-Regular.eot');
+	src: local('Proxima Nova Regular'), local('ProximaNova-Regular'),
+		url('../../font/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../../font/ProximaNova-Regular.woff') format('woff'),
+		url('../../font/ProximaNova-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+html, body {
+  font-size: 16px;
+  background-color: $bg-color;
+}
+
+.container-center {
+  margin: auto;
+
+  .block {
+    display: block;
+  }
+}
+
+.image-user {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}

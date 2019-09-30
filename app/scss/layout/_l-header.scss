@@ -1,0 +1,39 @@
+header {
+  position: relative;
+  padding: 0 20px;
+  font-size: 0.875rem;
+  font-weight: bold;
+  background-color: $color-white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  ul {
+    margin: 0;
+
+    li {
+      padding: 25px 15px;
+      list-style: none;
+      display: inline-block;
+
+      a {
+        padding: 25px 15px;
+      }
+
+      a, a:focus {
+        text-decoration: none;
+        color: $color-dark-blue;
+      }
+    }
+  }
+
+  button {
+    position: absolute;
+    right: 90px;
+
+    i {
+      font-size: 1rem;
+      padding-right: 5px;
+    }
+  }
+}
