@@ -1,8 +1,52 @@
-.m-btn-new-invoice {
+.m-btn {
   border: none;
+  display: flex;
+  align-items: center;
+  font-family: 'Proxima Nova Lt', sans-serif;
+  font-weight: 700;
+}
+
+.m-btn-new-invoice {
   background-color: $color-dark-blue;
   color: $color-white;
-  padding: 10px 15px;
-  border-radius: 20px;
-  font-size: 14px;
+  padding: 0.75em 1.9em 0.4em .5em;
+  border-radius: 1.5em;
+  font-size: 0.75rem;
+  line-height: 1em;
+  letter-spacing: 0.043em;
+  
+}
+
+.m-btn-view-all {
+  color: $color-white;
+  background-color: rgba($color-black, .15);
+  font-size: 0.8rem;
+  border-radius: 1.5em;
+  letter-spacing: 0.043em;
+  padding: .15em 1em .15em .6em;
+  justify-content: flex-end;
+
+  .m-btn-circle-icon {
+    background-color: rgba($color-black, .2);
+    border-radius: 1.5em;
+
+    i {
+      font-size: 0.8em;
+    }
+  }
+}
+
+.m-btn-view-invoice {
+  font-size: 0.875em;
+  background-color: #f6f6f6;
+  color: $color-dark-blue;
+  width: 100%;
+  padding: .8em 0;
+  justify-content: center;
+  border-bottom-left-radius: 0.57em;
+  border-bottom-right-radius: 0.57em;
+
+  i {
+    padding-left: .3em;
+  }
 }

@@ -1,8 +1,8 @@
 header {
   position: relative;
   padding: 0 20px;
-  font-size: 0.875rem;
-  font-weight: bold;
+  font-size: 0.85rem;
+  font-weight: 700;
   background-color: $color-white;
   display: flex;
   justify-content: space-between;
@@ -12,28 +12,25 @@ header {
     margin: 0;
 
     li {
-      padding: 25px 15px;
+      padding: 25px 0;
       list-style: none;
       display: inline-block;
 
       a {
-        padding: 25px 15px;
-      }
-
-      a, a:focus {
-        text-decoration: none;
-        color: $color-dark-blue;
+        padding: 25px;
+        color: $color-link-dark-blue;
       }
     }
   }
 
   button {
     position: absolute;
-    right: 90px;
+    font-size: 0.8rem;
+    right: 95px;
 
     i {
-      font-size: 1rem;
-      padding-right: 5px;
+      font-size: 1.2rem;
+      padding-right: 4px;
     }
   }
 }

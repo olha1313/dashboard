@@ -1,21 +1,34 @@
 @font-face {
-	font-family: 'Proxima Nova Rg';
-	src: url('../../font/ProximaNova-Regular.eot');
-	src: local('Proxima Nova Regular'), local('ProximaNova-Regular'),
-		url('../../font/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
-		url('../../font/ProximaNova-Regular.woff') format('woff'),
-		url('../../font/ProximaNova-Regular.ttf') format('truetype');
+	font-family: 'Proxima Nova';
+	src: url('../../font/ProximaNova.eot');
+	src: local('Proxima Nova'), local('ProximaNova'),
+		url('../../font/ProximaNova.eot?#iefix') format('embedded-opentype'),
+		url('../../font/ProximaNova.woff') format('woff'),
+		url('../../font/ProximaNova.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'Proxima Nova Lt';
+	src: url('../../font/ProximaNova-Light.eot');
+	src: local('Proxima Nova Light'), local('ProximaNova-Light'),
+		url('../../font/ProximaNova-Light.eot?#iefix') format('embedded-opentype'),
+		url('../../font/ProximaNova-Light.woff') format('woff'),
+		url('../../font/ProximaNova-Light.ttf') format('truetype');
+	font-weight: 300;
+  font-style: normal;
+}
+
 html, body {
+  font-family: 'Proxima Nova', sans-serif;
   font-size: 16px;
   background-color: $bg-color;
 }
 
 .container-center {
   margin: auto;
+  padding: 0 50px;
 
   .block {
     display: block;

@@ -21,7 +21,7 @@
       <li><a href="#">Clients</a></li>
       <li><a href="#">Expenses</a></li>
     </ul>
-      <button class="m-btn-new-invoice"><i class="icon-plus-1"></i>New Invoice</button>
+      <button class="m-btn m-btn-new-invoice"><i class="icon-plus-1"></i>New Invoice</button>
       <a href="index.html"><img src="img/portrait_1.jpg" alt="Portrait" class="image-user"></a>
   </header>
 
@@ -29,19 +29,19 @@
     <div class="container container-center">
       <div class="row">
         <div class="col-xs-12 col-md-4">
-          <span>Overdue</span>
-          <span class="block">&#36;500</span>
-          <button>View all<span><i class="icon-right-open-1"></i></span></button>
+          <span class="item-state">Overdue</span>
+          <span class="block item-overview-total">&#36;500</span>
+          <button class="m-btn m-btn-view-all">View all<span class="m-btn-circle-icon"><i class="icon-right-open-1"></i></span></button>
         </div>
         <div class="col-xs-12 col-md-4">
-          <span>In draft</span>
-          <span class="block">&#36;3 400</span>
-          <button>View all<span><i class="icon-right-open-1"></i></span></button>
+          <span class="item-state">In draft</span>
+          <span class="block item-overview-total">&#36;3,400</span>
+          <button class="m-btn m-btn-view-all">View all<span class="m-btn-circle-icon"><i class="icon-right-open-1"></i></span></button>
         </div>
         <div class="col-xs-12 col-md-4">
-          <span>Total outstanding</span>
-          <span class="block">&#36;3 900</span>
-          <button>View all<span><i class="icon-right-open-1"></i></span></button>
+          <span class="item-state">Total outstanding</span>
+          <span class="block item-overview-total">&#36;3,900</span>
+          <button class="m-btn m-btn-view-all">View all<span class="m-btn-circle-icon"><i class="icon-right-open-1"></i></span></button>
         </div>
       </div>
     </div>
@@ -49,33 +49,39 @@
 
   <section class="recent-invoices">
     <div class="container container-center">
-      <p>Recent Invoices</p>
+      <p id="recent-invoice">Recent Invoices</p>
       <div class="row">
         <div class="col-xs-12 col-md-4">
           <div class="m-recent-invoice">
-            <span>Maria Schmidt</span>
-            <span class="m-status-pending">Pending</span>
-            <span class="block">&#36;3,400</span>
-            <span class="block">Due in 2 days</span>
-            <button>View Invoice <i class="icon-right-open-1"></i></button>
+            <div class="item-info-recent-invoice">
+              <span class="item-person">Maria Schmidt</span>
+              <span class="m-status m-status-pending">Pending</span>
+              <span class="block total-recent-invoice">&#36;3,400</span>
+              <span class="block date-recent-invoice">Due in 2 days</span>
+            </div>
+            <button class="m-btn m-btn-view-invoice">View Invoice <i class="icon-right-open-1"></i></button>
           </div>
         </div>
         <div class="col-xs-12 col-md-4">
           <div class="m-recent-invoice">
-            <span>Diane White</span>
-            <span class="m-status-overdue">Overdue</span>
-            <span class="block">&#36;500</span>
-            <span class="block">Due Yesterday</span>
-            <button>View Invoice <i class="icon-right-open-1"></i></button>
+            <div class="item-info-recent-invoice">
+              <span class="item-person">Diane White</span>
+              <span class="m-status m-status-overdue">Overdue</span>
+              <span class="block total-recent-invoice">&#36;500</span>
+              <span class="block date-recent-invoice">Due Yesterday</span>
+            </div>
+            <button class="m-btn m-btn-view-invoice">View Invoice <i class="icon-right-open-1"></i></button>
           </div>
         </div>
         <div class="col-xs-12 col-md-4">
           <div class="m-recent-invoice">
-            <span>Stephanie Kelley</span>
-            <span class="m-status-paid">Paid</span>
-            <span class="block">&#36;5,200</span>
-            <span class="block">Due 16 days ago</span>
-            <button>View Invoice <i class="icon-right-open-1"></i></button>
+            <div class="item-info-recent-invoice">
+              <span class="item-person">Stephanie Kelley</span>
+              <span class="m-status m-status-paid">Paid</span>
+              <span class="block total-recent-invoice">&#36;5,200</span>
+              <span class="block date-recent-invoice">Due 16 days ago</span>
+            </div>
+            <button class="m-btn m-btn-view-invoice">View Invoice <i class="icon-right-open-1"></i></button>
           </div>
         </div>
       </div>
@@ -86,8 +92,8 @@
     <div class="container container-center">
       <div class="row">
         <div class="col-xs-12">
-          <span>All Invoices</span>
-          <table>
+          <p id="all-invoices">All Invoices</p>
+          <table class="m-table-all-invoices">
 
             <tr>
               <th></th>
@@ -110,7 +116,7 @@
                 <span class="block">&#36;3,400</span>
                 <span class="block">US</span>
               </td>
-              <td><span class="m-status-pending">Pending</span></td>
+              <td><span class="m-status m-status-pending">Pending</span></td>
               <td><a href="index.html">View</a></td>
             </tr>
 
@@ -126,7 +132,7 @@
                 <span class="block">&#36;500</span>
                 <span class="block">US</span>
               </td>
-              <td><span class="m-status-overdue">Overdue</span></td>
+              <td><span class="m-status m-status-overdue">Overdue</span></td>
               <td><a href="index.html">View</a></td>
             </tr>
 
@@ -142,7 +148,7 @@
                 <span class="block">&#36;5,200</span>
                 <span class="block">US</span>
               </td>
-              <td><span class="m-status-paid">Paid</span></td>
+              <td><span class="m-status m-status-paid">Paid</span></td>
               <td><a href="index.html">View</a></td>
             </tr>
 
@@ -158,7 +164,7 @@
                 <span class="block">&#36;2,400</span>
                 <span class="block">US</span>
               </td>
-              <td><span class="m-status-paid">Paid</span></td>
+              <td><span class="m-status m-status-paid">Paid</span></td>
               <td><a href="index.html">View</a></td>
             </tr>
 
@@ -174,7 +180,7 @@
                 <span class="block">&#36;1,000</span>
                 <span class="block">US</span>
               </td>
-              <td><span class="m-status-paid">Paid</span></td>
+              <td><span class="m-status m-status-paid">Paid</span></td>
               <td><a href="index.html">View</a></td>
             </tr>
 
@@ -190,7 +196,7 @@
                 <span class="block">&#36;1,000</span>
                 <span class="block">US</span>
               </td>
-              <td><span class="m-status-paid">Paid</span></td>
+              <td><span class="m-status m-status-paid">Paid</span></td>
               <td><a href="index.html">View</a></td>
             </tr>
           </table>
