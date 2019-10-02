@@ -31,17 +31,17 @@
         <div class="col-xs-12 col-md-4">
           <span class="item-state">Overdue</span>
           <span class="block item-overview-total">&#36;500</span>
-          <button class="m-btn m-btn-view-all">View all<span class="m-btn-circle-icon"><i class="icon-right-open-1"></i></span></button>
+          <button class="m-btn m-btn-view-all">View all<i class="icon-right-open-1"></i></button>
         </div>
         <div class="col-xs-12 col-md-4">
           <span class="item-state">In draft</span>
           <span class="block item-overview-total">&#36;3,400</span>
-          <button class="m-btn m-btn-view-all">View all<span class="m-btn-circle-icon"><i class="icon-right-open-1"></i></span></button>
+          <button class="m-btn m-btn-view-all">View all<i class="icon-right-open-1"></i></button>
         </div>
         <div class="col-xs-12 col-md-4">
           <span class="item-state">Total outstanding</span>
           <span class="block item-overview-total">&#36;3,900</span>
-          <button class="m-btn m-btn-view-all">View all<span class="m-btn-circle-icon"><i class="icon-right-open-1"></i></span></button>
+          <button class="m-btn m-btn-view-all">View all<i class="icon-right-open-1"></i></button>
         </div>
       </div>
     </div>
@@ -95,110 +95,115 @@
           <p id="all-invoices">All Invoices</p>
           <table class="m-table-all-invoices">
 
-            <tr>
-              <th></th>
-              <th>Client</th>
-              <th>Issued date</th>
-              <th>Due date</th>
-              <th>Amount</th>
-              <th>Status</th>
-            </tr>
+            <thead>
+              <tr>
+                <th></th>
+                <th>Client</th>
+                <th>Issued date</th>
+                <th>Due date</th>
+                <th>Amount</th>
+                <th>Status</th>
+                <th></th>
+              </tr>
+            </thead>
 
-            <tr>
-              <td><img src="img/portrait_2.jpg" alt="Portrait" class="image-user"></td>
-              <td>
-                <span class="block">Maria Schmidt</span>
-                <span class="block">000045</span>
-              </td>
-              <td>Aug. 10, 2018</td>
-              <td>In 2 days</td>
-              <td>
-                <span class="block">&#36;3,400</span>
-                <span class="block">US</span>
-              </td>
-              <td><span class="m-status m-status-pending">Pending</span></td>
-              <td><a href="index.html">View</a></td>
-            </tr>
+            <tbody>
+              <tr>
+                <td><img src="img/portrait_2.jpg" alt="Portrait" class="image-user"></td>
+                <td>
+                  <span class="block">Maria Schmidt</span>
+                  <span class="background-info">000045</span>
+                </td>
+                <td>Aug. 10, 2018</td>
+                <td>In 2 days</td>
+                <td>
+                  <span class="block">&#36;3,400</span>
+                  <span class="background-info">US</span>
+                </td>
+                <td><span class="m-status m-status-pending">Pending</span></td>
+                <td><a href="index.html">View</a></td>
+              </tr>
 
-            <tr>
-              <td><img src="img/portrait_3.jpg" alt="Portrait" class="image-user"></td>
-              <td>
-                <span class="block">Diane White</span>
-                <span class="block">000044</span>
-              </td>
-              <td>Aug. 7, 2018</td>
-              <td>Yesterday</td>
-              <td>
-                <span class="block">&#36;500</span>
-                <span class="block">US</span>
-              </td>
-              <td><span class="m-status m-status-overdue">Overdue</span></td>
-              <td><a href="index.html">View</a></td>
-            </tr>
+              <tr>
+                <td><img src="img/portrait_3.jpg" alt="Portrait" class="image-user"></td>
+                <td>
+                  <span class="block">Diane White</span>
+                  <span class="background-info">000044</span>
+                </td>
+                <td>Aug. 7, 2018</td>
+                <td>Yesterday</td>
+                <td>
+                  <span class="block">&#36;500</span>
+                  <span class="background-info">US</span>
+                </td>
+                <td><span class="m-status m-status-overdue">Overdue</span></td>
+                <td><a href="index.html">View</a></td>
+              </tr>
 
-            <tr>
-              <td><img src="img/portrait_4.jpg" alt="Portrait" class="image-user"></td>
-              <td>
-                <span class="block">Stephanie Kelley</span>
-                <span class="block">000043</span>
-              </td>
-              <td>Jul. 23, 2018</td>
-              <td>16 days ago</td>
-              <td>
-                <span class="block">&#36;5,200</span>
-                <span class="block">US</span>
-              </td>
-              <td><span class="m-status m-status-paid">Paid</span></td>
-              <td><a href="index.html">View</a></td>
-            </tr>
+              <tr>
+                <td><img src="img/portrait_4.jpg" alt="Portrait" class="image-user"></td>
+                <td>
+                  <span class="block">Stephanie Kelley</span>
+                  <span class="background-info">000043</span>
+                </td>
+                <td>Jul. 23, 2018</td>
+                <td>16 days ago</td>
+                <td>
+                  <span class="block">&#36;5,200</span>
+                  <span class="background-info">US</span>
+                </td>
+                <td><span class="m-status m-status-paid">Paid</span></td>
+                <td><a href="index.html">View</a></td>
+              </tr>
 
-            <tr>
-              <td><img src="img/portrait_5.jpg" alt="Portrait" class="image-user"></td>
-              <td>
-                <span class="block">Mildred Guerrero</span>
-                <span class="block">000042</span>
-              </td>
-              <td>Jul. 13, 2018</td>
-              <td>1 month ago</td>
-              <td>
-                <span class="block">&#36;2,400</span>
-                <span class="block">US</span>
-              </td>
-              <td><span class="m-status m-status-paid">Paid</span></td>
-              <td><a href="index.html">View</a></td>
-            </tr>
+              <tr>
+                <td><img src="img/portrait_5.jpg" alt="Portrait" class="image-user"></td>
+                <td>
+                  <span class="block">Mildred Guerrero</span>
+                  <span class="background-info">000042</span>
+                </td>
+                <td>Jul. 13, 2018</td>
+                <td>1 month ago</td>
+                <td>
+                  <span class="block">&#36;2,400</span>
+                  <span class="background-info">US</span>
+                </td>
+                <td><span class="m-status m-status-paid">Paid</span></td>
+                <td><a href="index.html">View</a></td>
+              </tr>
 
-            <tr>
-              <td><img src="img/portrait_6.jpg" alt="Portrait" class="image-user"></td>
-              <td>
-                <span class="block">Larry Diaz</span>
-                <span class="block">000041</span>
-              </td>
-              <td>Jul. 9, 2018</td>
-              <td>1 month ago</td>
-              <td>
-                <span class="block">&#36;1,000</span>
-                <span class="block">US</span>
-              </td>
-              <td><span class="m-status m-status-paid">Paid</span></td>
-              <td><a href="index.html">View</a></td>
-            </tr>
+              <tr>
+                <td><img src="img/portrait_6.jpg" alt="Portrait" class="image-user"></td>
+                <td>
+                  <span class="block">Larry Diaz</span>
+                  <span class="background-info">000041</span>
+                </td>
+                <td>Jul. 9, 2018</td>
+                <td>1 month ago</td>
+                <td>
+                  <span class="block">&#36;1,000</span>
+                  <span class="background-info">US</span>
+                </td>
+                <td><span class="m-status m-status-paid">Paid</span></td>
+                <td><a href="index.html">View</a></td>
+              </tr>
 
-            <tr>
-              <td><img src="img/portrait_7.jpg" alt="Portrait" class="image-user"></td>
-              <td>
-                <span class="block">Arthur Banks</span>
-                <span class="block">000040</span>
-              </td>
-              <td>Jul. 6, 2018</td>
-              <td>1 month ago</td>
-              <td>
-                <span class="block">&#36;1,000</span>
-                <span class="block">US</span>
-              </td>
-              <td><span class="m-status m-status-paid">Paid</span></td>
-              <td><a href="index.html">View</a></td>
-            </tr>
+              <tr>
+                <td><img src="img/portrait_7.jpg" alt="Portrait" class="image-user"></td>
+                <td>
+                  <span class="block">Arthur Banks</span>
+                  <span class="background-info">000040</span>
+                </td>
+                <td>Jul. 6, 2018</td>
+                <td>1 month ago</td>
+                <td>
+                  <span class="block">&#36;1,000</span>
+                  <span class="background-info">US</span>
+                </td>
+                <td><span class="m-status m-status-paid">Paid</span></td>
+                <td><a href="index.html">View</a></td>
+              </tr>
+            </tbody>
           </table>
         </div>
       </div>

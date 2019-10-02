@@ -4,6 +4,7 @@
   align-items: center;
   font-family: 'Proxima Nova Lt', sans-serif;
   font-weight: 700;
+  transition: all .2s ease-in-out;
 }
 
 .m-btn-new-invoice {
@@ -23,22 +24,19 @@
   font-size: 0.8rem;
   border-radius: 1.5em;
   letter-spacing: 0.043em;
-  padding: .15em 1em .15em .6em;
-  justify-content: flex-end;
-
-  .m-btn-circle-icon {
-    background-color: rgba($color-black, .2);
-    border-radius: 1.5em;
+  padding: .15em .2em .15em .6em;
 
     i {
-      font-size: 0.8em;
+      font-size: 0.9em;
+      background-color: rgba($color-black, .2);
+      border-radius: 50%;
+      margin-left: .6em;
     }
-  }
 }
 
 .m-btn-view-invoice {
   font-size: 0.875em;
-  background-color: #f6f6f6;
+  background-color: $color-blue;
   color: $color-dark-blue;
   width: 100%;
   padding: .8em 0;

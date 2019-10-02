@@ -1,11 +1,60 @@
 #all-invoices {
-    color: $color-dark-blue;
-    font-size: 1rem;
-    font-weight: 700;
-    margin: 2em 0 .9em;
-    letter-spacing: .035em;
+	color: $color-dark-blue;
+	font-size: 1rem;
+	font-weight: 700;
+	margin: 2em 0 .9em;
+	letter-spacing: .035em;
 }
 
 .m-table-all-invoices {
-    width: 100%;
+	width: 100%;
+	background-color: $color-white;
+	color: $color-dark-grey;
+	font-weight: 700;
+	font-size: .875rem;
+	padding: 0 1em;
+	border-radius: .8em;
+	overflow: hidden;
+	box-shadow: 0 4px 10px rgba($color-black, .15);
+	table-layout: fixed;
+
+	thead tr th {
+		text-transform: uppercase;
+		letter-spacing: .05em;
+		background-color: $color-blue;
+		padding: 1em 0;
+
+		:nth-child(1) {
+			text-align: left;
+		}
+	}
+
+	tbody {
+		td {
+			padding: 1em 0;
+
+			.background-info {
+				color: $color-light-grey;
+			}
+		}
+
+		tr:nth-child(2n) {
+			background-color: $color-blue;
+		}
+
+		tr {
+			td:nth-child(1) {
+				text-align: center;
+			}
+
+			td:nth-child(3) {
+				text-align: right;
+				padding: 0 1em;
+			}
+		}
+	}
+
+	a {
+		color: $color-dark-grey;
+	}
 }

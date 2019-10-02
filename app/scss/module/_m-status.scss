@@ -1,21 +1,23 @@
 .m-status {
-    font-size: 0.85em;
-    font-weight: 700;
-    border-radius: 1.5em;
-    padding: .2em .7em;
+	font-size: 0.85em;
+	font-weight: 700;
+	border-radius: 1.5em;
+	padding: .2em .7em;
 }
 
 .m-status-pending {
-    background-color: $color-yellow;
-    color: $color-yellow-text;
+	background-color: $color-yellow;
+	color: $color-yellow-text;
 }
 
 .m-status-overdue {
-    background-color: $color-red;
-    color: $color-red-text;
+	background-color: $color-red;
+	color: $color-red-text;
 }
 
 .m-status-paid {
-    color: $color-green-text;
-    background-color: $color-green;
+	background-color: $color-green;
+	color: $color-green-text;
 }
+
+
