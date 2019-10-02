@@ -14,15 +14,19 @@
 </head>
 <body>
   <header>
-    <img src="img/logo.png" alt="Logotype">
-    <ul>
+    <a href="index.html"><img src="img/logo.png" alt="Logotype" id="logotype"></a>
+    <button class="m-btn" data-toggle="collapse" data-target="main-menu" aria-expanded="false" aria-controls="main-menu"><i class="icon-menu"></i></button>
+    <ul class="collapse" id="main-menu">
       <li><a href="#">Dashboard</a></li>
       <li><a href="#">Invoices</a></li>
       <li><a href="#">Clients</a></li>
       <li><a href="#">Expenses</a></li>
     </ul>
-      <button class="m-btn m-btn-new-invoice"><i class="icon-plus-1"></i>New Invoice</button>
+    <button class="m-btn m-btn-new-invoice"><i class="icon-plus-1"></i>New Invoice</button>
+    <div class="item-current-user">
       <a href="index.html"><img src="img/portrait_1.jpg" alt="Portrait" class="image-user"></a>
+      <span class="name-user">Kimberly Washington</span>
+    </div>
   </header>
 
   <section class="overview">
@@ -94,6 +98,16 @@
         <div class="col-xs-12">
           <p id="all-invoices">All Invoices</p>
           <table class="m-table-all-invoices">
+
+              <colgroup>
+                <col style="width:10%">
+                <col style="width:15%">
+                <col style="width:16%">
+                <col style="width:18%">
+                <col style="width:18%">
+                <col style="width:15%">
+                <col style="width:15%">
+              </colgroup> 
 
             <thead>
               <tr>

@@ -5,6 +5,7 @@ header {
   font-weight: 700;
   background-color: $color-white;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 
@@ -21,6 +22,10 @@ header {
         color: $color-link-dark-blue;
       }
     }
+  }
+
+  .name-user {
+    display: none;
   }
 
   button {
