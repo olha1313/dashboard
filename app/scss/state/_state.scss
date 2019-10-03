@@ -26,13 +26,16 @@ header li a:hover {
 		flex-direction: column;
 		align-items: start;
 		padding: 0;
-
 		#logotype {
-			padding: 1em 1em 0 1em;
+			padding: 1em;
+		}
+
+		.m-btn-responsive-menu {
+			display: inline-block;
 		}
 
 		ul {
-			padding: 1em 0 .8em 1em;
+			padding: 0 0 .8em 1em;
 			li {
 			display: block;
 			padding: .7em 0;
@@ -42,26 +45,80 @@ header li a:hover {
 			}
 		}
 
+		.m-btn-new-invoice {
+			position: static;
+			margin-left: 1em;
+		}
+
 		.item-current-user {
 			margin-top: 1em;
 			border-top: 1px solid $color-blue;
 			width: 100%;
 			display: flex;
 			align-items: center;
-
 			a {
 				padding: 1em 1em .6em 1em;
 			}
-
 			.name-user {
 				display: inline;
 				color: $color-link-dark-blue;
 			}
 		}
+	}
 
-		button {
-			position: static;
-			margin-left: 1em;
+	.overview {
+		padding: 0;
+		.container-center {
+			padding: 0;
+		}
+		.item-overview {
+			padding: .7em 2.5em 0;
+			border-top: 1px solid $color-light-blue;
+			.m-btn-view-all {
+				position: absolute;
+				right: 2.5em;
+				top: 4.3em;
+			}
+		}
+	}
+	
+	.container-center {
+		padding: 0 .6em;
+	}
+
+	.m-recent-invoice {
+		margin-bottom: 1em;
+		.item-info-recent-invoice{
+			padding: .5em 1em;
+		}
+	}
+	
+	#all-invoices {
+		margin: 1em 0 .9em;
+	}
+
+	.m-table-all-invoices {
+		th:nth-child(1), td:nth-child(1), th:nth-child(3), td:nth-child(3), th:nth-child(4), td:nth-child(4),
+		th:nth-child(7), td:nth-child(7), th:nth-child(8), td:nth-child(8) {
+			display: none;
+		}
+
+		th:nth-child(2), td:nth-child(2) {
+			padding-left: 1.5em; 
+		}
+
+		th:nth-child(5), td:nth-child(5) {
+			padding-right: 0; 
+		}
+
+		th:nth-child(6), td:nth-child(6) {
+			display: block;
+			font-size: 1.4em;
+			width: 5%;
+		}
+
+		.m-status-indicator {
+			display: inline-block;
 		}
 	}
 }

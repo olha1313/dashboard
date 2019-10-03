@@ -7,6 +7,16 @@
   transition: all .2s ease-in-out;
 }
 
+.m-btn-responsive-menu {
+  background-color: transparent;
+  color: $color-dark-blue;
+  display: none;
+  font-size: 1.5em;
+  position: absolute;
+  right: 1em;
+  top: 1em;
+}
+
 .m-btn-new-invoice {
   background-color: $color-dark-blue;
   color: $color-white;
@@ -15,7 +25,13 @@
   font-size: 0.75rem;
   line-height: 1em;
   letter-spacing: 0.043em;
-  
+  position: absolute;
+  right: 95px;
+  font-size: 0.8rem;
+    i {
+      font-size: 1.2rem;
+      padding-right: 4px;
+    }
 }
 
 .m-btn-view-all {
@@ -25,6 +41,7 @@
   border-radius: 1.5em;
   letter-spacing: 0.043em;
   padding: .15em .2em .15em .6em;
+  position: relative;
 
     i {
       font-size: 0.9em;

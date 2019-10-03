@@ -5,19 +5,25 @@
 	padding: .2em .7em;
 }
 
-.m-status-pending {
+.m-status-pending, .m-status-indicator-pending {
 	background-color: $color-yellow;
 	color: $color-yellow-text;
 }
 
-.m-status-overdue {
+.m-status-overdue, .m-status-indicator-overdue {
 	background-color: $color-red;
 	color: $color-red-text;
 }
 
-.m-status-paid {
+.m-status-paid, .m-status-indicator-paid {
 	background-color: $color-green;
 	color: $color-green-text;
 }
 
-
+.m-status-indicator {
+	width: .7em;
+	height: .7em;
+	border-radius: 50%;
+	margin-right: .3em;
+	display: none;
+}

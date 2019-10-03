@@ -5,44 +5,47 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Dashboard</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="icon" type="image/png" href="img/favicon.png">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/flexboxgrid.css">
   <link rel="stylesheet" href="css/font-icon.css">
   <link rel="stylesheet" href="css/global.css">
+  <title>Dashboard</title>
 </head>
 <body>
   <header>
     <a href="index.html"><img src="img/logo.png" alt="Logotype" id="logotype"></a>
-    <button class="m-btn" data-toggle="collapse" data-target="main-menu" aria-expanded="false" aria-controls="main-menu"><i class="icon-menu"></i></button>
-    <ul class="collapse" id="main-menu">
-      <li><a href="#">Dashboard</a></li>
-      <li><a href="#">Invoices</a></li>
-      <li><a href="#">Clients</a></li>
-      <li><a href="#">Expenses</a></li>
-    </ul>
-    <button class="m-btn m-btn-new-invoice"><i class="icon-plus-1"></i>New Invoice</button>
-    <div class="item-current-user">
-      <a href="index.html"><img src="img/portrait_1.jpg" alt="Portrait" class="image-user"></a>
-      <span class="name-user">Kimberly Washington</span>
-    </div>
+    <button class="m-btn m-btn-responsive-menu" data-toggle="collapse" data-target=".main-menu" aria-expanded="false" aria-controls="main-menu"><i class="icon-menu"></i></button>
+    
+      <ul class="main-menu">
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="#">Invoices</a></li>
+        <li><a href="#">Clients</a></li>
+        <li><a href="#">Expenses</a></li>
+      </ul>
+      <button class="m-btn m-btn-new-invoice main-menu"><i class="icon-plus-1"></i>New Invoice</button>
+      <div class="item-current-user main-menu">
+        <a href="index.html"><img src="img/portrait_1.jpg" alt="Portrait" class="image-user"></a>
+        <span class="name-user">Kimberly Washington</span>
+      </div>
+    
   </header>
 
   <section class="overview">
     <div class="container container-center">
       <div class="row">
-        <div class="col-xs-12 col-md-4">
+        <div class="col-xs-12 col-md-4 item-overview">
           <span class="item-state">Overdue</span>
           <span class="block item-overview-total">&#36;500</span>
           <button class="m-btn m-btn-view-all">View all<i class="icon-right-open-1"></i></button>
         </div>
-        <div class="col-xs-12 col-md-4">
+        <div class="col-xs-12 col-md-4 item-overview">
           <span class="item-state">In draft</span>
           <span class="block item-overview-total">&#36;3,400</span>
           <button class="m-btn m-btn-view-all">View all<i class="icon-right-open-1"></i></button>
         </div>
-        <div class="col-xs-12 col-md-4">
+        <div class="col-xs-12 col-md-4 item-overview">
           <span class="item-state">Total outstanding</span>
           <span class="block item-overview-total">&#36;3,900</span>
           <button class="m-btn m-btn-view-all">View all<i class="icon-right-open-1"></i></button>
@@ -104,7 +107,8 @@
                 <col style="width:15%">
                 <col style="width:16%">
                 <col style="width:18%">
-                <col style="width:18%">
+                <col style="width:13%">
+                <col style="width:0%">
                 <col style="width:15%">
                 <col style="width:15%">
               </colgroup> 
@@ -116,6 +120,7 @@
                 <th>Issued date</th>
                 <th>Due date</th>
                 <th>Amount</th>
+                <th></th>
                 <th>Status</th>
                 <th></th>
               </tr>
@@ -131,9 +136,11 @@
                 <td>Aug. 10, 2018</td>
                 <td>In 2 days</td>
                 <td>
-                  <span class="block">&#36;3,400</span>
-                  <span class="background-info">US</span>
+                  <span class="m-status-indicator m-status-indicator-pending"></span>
+                  <span>&#36;3,400</span>
+                  <span class="block background-info">US</span>
                 </td>
+                <td><i class="icon-right-open-1"></i></td>
                 <td><span class="m-status m-status-pending">Pending</span></td>
                 <td><a href="index.html">View</a></td>
               </tr>
@@ -147,9 +154,11 @@
                 <td>Aug. 7, 2018</td>
                 <td>Yesterday</td>
                 <td>
-                  <span class="block">&#36;500</span>
-                  <span class="background-info">US</span>
+                  <span class="m-status-indicator m-status-indicator-overdue"></span>
+                  <span>&#36;500</span>
+                  <span class="block background-info">US</span>
                 </td>
+                <td><i class="icon-right-open-1"></i></td>
                 <td><span class="m-status m-status-overdue">Overdue</span></td>
                 <td><a href="index.html">View</a></td>
               </tr>
@@ -163,9 +172,11 @@
                 <td>Jul. 23, 2018</td>
                 <td>16 days ago</td>
                 <td>
-                  <span class="block">&#36;5,200</span>
-                  <span class="background-info">US</span>
+                  <span class="m-status-indicator m-status-indicator-paid"></span>
+                  <span>&#36;5,200</span>
+                  <span class="block background-info">US</span>
                 </td>
+                <td><i class="icon-right-open-1"></i></td>
                 <td><span class="m-status m-status-paid">Paid</span></td>
                 <td><a href="index.html">View</a></td>
               </tr>
@@ -179,9 +190,11 @@
                 <td>Jul. 13, 2018</td>
                 <td>1 month ago</td>
                 <td>
-                  <span class="block">&#36;2,400</span>
-                  <span class="background-info">US</span>
+                  <span class="m-status-indicator  m-status-indicator-paid"></span>
+                  <span>&#36;2,400</span>
+                  <span class="block background-info">US</span>
                 </td>
+                <td><i class="icon-right-open-1"></i></td>
                 <td><span class="m-status m-status-paid">Paid</span></td>
                 <td><a href="index.html">View</a></td>
               </tr>
@@ -195,9 +208,11 @@
                 <td>Jul. 9, 2018</td>
                 <td>1 month ago</td>
                 <td>
-                  <span class="block">&#36;1,000</span>
-                  <span class="background-info">US</span>
+                  <span class="m-status-indicator  m-status-indicator-paid"></span>
+                  <span>&#36;1,000</span>
+                  <span class="block background-info">US</span>
                 </td>
+                <td><i class="icon-right-open-1"></i></td>
                 <td><span class="m-status m-status-paid">Paid</span></td>
                 <td><a href="index.html">View</a></td>
               </tr>
@@ -211,9 +226,11 @@
                 <td>Jul. 6, 2018</td>
                 <td>1 month ago</td>
                 <td>
-                  <span class="block">&#36;1,000</span>
-                  <span class="background-info">US</span>
+                  <span class="m-status-indicator  m-status-indicator-paid"></span>
+                  <span>&#36;1,000</span>
+                  <span class="block background-info">US</span>
                 </td>
+                <td><i class="icon-right-open-1"></i></td>
                 <td><span class="m-status m-status-paid">Paid</span></td>
                 <td><a href="index.html">View</a></td>
               </tr>
@@ -223,6 +240,11 @@
       </div>
     </div>
   </section>
+
+  <script src="js/index.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
 
