@@ -21,7 +21,7 @@ header li a:hover {
 	margin-left: .25em;
 }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 450px) {
 	header {
 		flex-direction: column;
 		align-items: start;
@@ -88,9 +88,6 @@ header li a:hover {
 
 	.m-recent-invoice {
 		margin-bottom: 1em;
-		.item-info-recent-invoice{
-			padding: .5em 1em;
-		}
 	}
 	
 	#all-invoices {
@@ -114,7 +111,11 @@ header li a:hover {
 		th:nth-child(6), td:nth-child(6) {
 			display: block;
 			font-size: 1.4em;
-			width: 5%;
+			text-align: center;
+		}
+
+		td:nth-child(6):hover i {
+			text-decoration: underline;
 		}
 
 		.m-status-indicator {
